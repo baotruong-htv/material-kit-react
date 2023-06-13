@@ -47,6 +47,8 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
+import UsersPage from "layouts/pages/demo/users";
+import UserDetailsPage from "layouts/pages/demo/user-details";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -75,6 +77,22 @@ const routes = [
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
+      {
+        name: "demo pages",
+        collapse: [
+          {
+            name: "users",
+            route: "/pages/demo/users",
+            component: <UsersPage />,
+          },
+          {
+            name: "user details",
+            route: "/pages/demo/users/:userId",
+            component: <UserDetailsPage />,
+            hidden: true,
+          },
+        ],
+      },
       {
         name: "landing pages",
         collapse: [

@@ -5,7 +5,7 @@
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "homepage": ".",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -25,6 +25,7 @@
     "@testing-library/user-event": "14.4.3",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
+    "localforage": "^1.10.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",

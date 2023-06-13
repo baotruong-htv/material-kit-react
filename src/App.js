@@ -29,6 +29,11 @@ import Presentation from "layouts/pages/presentation";
 // Material Kit 2 React routes
 import routes from "routes";
 
+import { seedData as seedUsersData } from "pages/Demo/Users/api";
+import USERS from "pages/Demo/Users/_mock-users.json";
+
+seedUsersData(USERS);
+
 export default function App() {
   const { pathname } = useLocation();
 
